@@ -74,7 +74,7 @@ const PlanScreen = () => {
 
             if (sessionId) {
                 const stripe = await loadStripe(
-                    "pk_test_51KQsGVBnurXcagxwPlyuf3xOsNvXKegYBpg9OnVgNMHgF0NqsbfR8Tkbu1Wv9GcxoQqoY0oKgeqmxjapsJlz4WPW00ffgOP5Ai"
+                    "это ваши данные!!!"
                 )
                 stripe.redirectToCheckout({sessionId});
             }
