@@ -1,7 +1,7 @@
 import firebase from 'firebase'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyA9vf407tZBdvSYO7dw95YKnMEi-0rq488",
+    apiKey: "это ваши данные!!!",
     authDomain: "netflix-build-redux.firebaseapp.com",
     projectId: "netflix-build-redux",
     storageBucket: "netflix-build-redux.appspot.com",
