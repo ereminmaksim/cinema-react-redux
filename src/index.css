@@ -1,0 +1,498 @@
+@tailwind base;
+/**********************************************/
+@layer base {
+    h1 {
+        @apply text-2xl;
+    }
+
+    h2 {
+        @apply text-xl;
+    }
+
+    h3 {
+        @apply text-lg;
+    }
+
+    a {
+        @apply text-blue-600 underline;
+    }
+}
+/**********************************************/
+
+
+@tailwind components;
+
+/**********************************************/
+@layer components {
+    .loginForm {
+        max-width: 350px;
+        padding: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgba(0, 0, 0, 0.85);
+
+    }
+}
+@layer components {
+    .loginForm_signUp {
+        text-decoration: none;
+    }
+
+    .loginForm_signUp:hover {
+        text-decoration: underline;
+    }
+}
+
+@layer components {
+    .img_netflix {
+        top: 5px !important;
+
+    }
+}
+/**********************************************/
+@layer components {
+    .loginForm_input {
+        padding: 5px 15px;
+        font-size: 1rem;
+        color: #171717;
+
+    }
+}
+/**********************************************/
+@layer components {
+    .login_bg_gradient {
+        /*z-index: 1;*/
+        height: 100vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        background-image: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.8) 0,
+                rgba(0, 0, 0, 0) 60%,
+                rgba(0, 0, 0, 0.8) 100%
+        );
+    }
+}
+/**********************************************/
+@layer components {
+    @media (max-width: 425px) {
+        .login_description {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+/**********************************************/
+@layer components {
+    .login_body {
+        position: absolute;
+        top: 14%;
+        z-index: 1;
+        color: #fff;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    @media (max-width: 425px) {
+        .login_body {
+            /*margin-top: -38%;*/
+            padding: 0px;
+            bottom: 0;
+        }
+
+    }
+}
+/**********************************************/
+
+
+/**********************************************/
+@layer components {
+    .btn__login {
+        padding: 10px 20px;
+    }
+}
+/**********************************************/
+
+@layer components {
+    .loginForm_button {
+        padding: 16px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: 1px solid rgb(185 28 28 / var(--tw-bg-opacity));
+        background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+}
+
+
+/**********************************************/
+@layer components {
+    .nav-animation {
+        position: fixed;
+        top: 0;
+        padding: 20px;
+        width: 100%;
+        height: 60px;
+        z-index: 1;
+
+        /*animation*/
+        transition-timing-function: ease-in;
+        transition: all 0.5s;
+
+    }
+
+    @media (max-width: 425px) {
+        .nav-animation {
+            width: 100%
+        }
+    }
+}
+@media (max-width: 425px) {
+    .img_avatar {
+        left: 85% !important;
+    }
+}
+
+/**********************************************/
+
+
+/**********************************************/
+@layer components {
+    .title_content {
+        width: 720px;
+    }
+
+    @media (max-width: 425px) {
+        .title_content {
+            width: 300px;
+            margin-top: 18px;
+        }
+    }
+}
+/**********************************************/
+
+/**********************************************/
+@layer components {
+    .app {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+/**********************************************/
+
+
+/**********************************************/
+@layer components {
+    .app__overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 86%;
+        height: 37rem;
+        /* mix-blend-mode: overlay; */
+        -webkit-mask-image: radial-gradient(ellipse farthest-side at 75% 25%, black, transparent 102%);
+        pointer-events: none;
+    }
+
+    @media (max-width: 425px) {
+        .app__overlay {
+            width: 85%;
+            background-position: 50% 0% !important;
+        }
+    }
+}
+/**********************************************/
+
+
+/**********************************************/
+@layer components {
+    .app__featured {
+        /*padding: 7rem 3rem 3rem;*/
+        width: 100%;
+        background: linear-gradient(to top, #000000, #171717);
+    }
+}
+/**********************************************/
+
+/**********************************************/
+@layer components {
+    .app__featuredInfo {
+        margin: 0;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
+/**********************************************/
+
+
+/**********************************************/
+@layer components {
+    .app__featuredTitle {
+        font-weight: 900;
+    }
+}
+/**********************************************/
+
+
+/**********************************************/
+@layer components {
+    .app__featuredGenres {
+        text-transform: uppercase;
+        font-size: 0.95rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 4px;
+        font-weight: 500;
+    }
+}
+/**********************************************/
+
+
+/**********************************************/
+@layer components {
+    .custom-banner {
+        height: 25.2rem;
+        background-image: linear-gradient(
+                180deg,
+                transparent,
+                rgb(23 23 23)
+        );
+    }
+}
+/**********************************************/
+
+
+/**********************************************/
+@layer components {
+    .banner-btn {
+        cursor: pointer;
+        color: white;
+        outline: none;
+        border: none;
+        font-weight: 700;
+        border-radius: 0.2vw;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 5px;
+        margin-right: 1rem;
+        background-color: rgba(51, 51, 51, 0.5);
+        padding-bottom: 0.5rem;
+        padding-top: 4px;
+    }
+
+    .banner-btn:hover {
+        color: #000;
+        background-color: #e6e6e6;
+        transition: all 0.2s;
+    }
+}
+/**********************************************/
+
+
+/**********************************************/
+@layer components {
+    .row_poster {
+        max-height: 100px;
+        object-fit: contain;
+        margin-right: 10px;
+        width: 100%;
+        transition: transform 450ms;
+    }
+
+    .row_poster:hover {
+        transform: scale(1.08);
+        opacity: 1;
+    }
+
+}
+/**********************************************/
+
+
+/**********************************************/
+@layer components {
+    .row_posterLarge {
+        max-height: 250px;
+        margin-right: 14px;
+        margin-left: 7px;
+    }
+
+    .row_posterLarge:hover {
+        transform: scale(1.09);
+        opacity: 1;
+    }
+}
+/**********************************************/
+
+
+/**********************************************/
+@layer components {
+    .row_posters::-webkit-scrollbar {
+        display: none;
+    }
+}
+@layer components {
+    .profileScreen {
+        height: 100vh;
+        color: white;
+    }
+}
+
+@layer components {
+    .profileScreen__body {
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+        width: 50%;
+        max-width: 800px;
+        padding-top: 8%;
+    }
+
+    @media (max-width: 425px) {
+
+        .profileScreen {
+            background: none !important;
+        }
+
+        .profileScreen__body {
+            width: 82%;
+            padding-top: 43%;
+        }
+
+        .profileScreen__info__info {
+            flex-direction: column;
+        }
+
+        .profileScreen__info__info > img {
+            height: 211px;
+        }
+
+        .profileScreen__details {
+            margin-left: 0 !important;
+        }
+
+    }
+
+    @media (max-width: 375px) {
+        .profileScreen__body {
+            width: 88%;
+            padding-top: 57%;
+        }
+
+        .profileScreen__info__info {
+            flex-direction: column;
+        }
+
+
+    }
+
+    @media (max-width: 320px) {
+        .profileScreen__details {
+            margin-left: auto !important;
+            margin-right: auto;
+        }
+
+        .profileScreen__info__info {
+            flex-direction: column;
+        }
+
+        .profileScreen__info__info > img {
+            height: 211px;
+        }
+    }
+
+
+}
+@layer components {
+    .profileScreen__info__text {
+        font-size: 35px;
+        font-weight: 400;
+        border-bottom: 1px solid #282c2d;
+        margin-bottom: 20px;
+
+    }
+}
+@layer components {
+    .profileScreen__details {
+        color: white;
+        margin-left: 25px;
+        flex: 1;
+
+    }
+}
+@layer components {
+    .profileScreen__details__text {
+        background-color: gray;
+        padding: 15px;
+        font-size: 15px;
+        padding-left: 20px;
+
+    }
+}
+@layer components {
+    .profileScreen__signOut {
+        padding: 10px 20px;
+        font-size: 1rem;
+        margin-top: 5%;
+        width: 100%;
+        color: white;
+        background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+        font-weight: 600;
+        cursor: pointer;
+
+    }
+}
+@layer components {
+    .planScreen__plan {
+
+        align-items: center;
+        padding: 20px;
+        opacity: 0.8;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .planScreen__plan:hover {
+        opacity: 1
+    }
+
+    .btn__login{
+        padding: 10px 15px;
+        border-radius: 3px;
+    }
+
+    .planScreen__plan--disabled > button{
+        background-color: #666666;
+    }
+
+}
+
+/**********************************************/
+
+
+/**********************************************/
+@tailwind utilities;
+/**********************************************/
+* {
+    margin: 0;
+
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
